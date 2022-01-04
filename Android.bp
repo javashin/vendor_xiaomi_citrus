@@ -63,16 +63,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "SoterService",
-	owner: "xiaomi",
-	apk: "proprietary/app/SoterService/SoterService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "CACertService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
@@ -347,15 +337,6 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.mlipay",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
